@@ -6,7 +6,7 @@ public class OperadoresLogicos {
 		System.out.println("resultado usando and: "+ (10 == 3 && 8 != 10));
 		System.out.println("resultado usando and: "+ (10 > 3 && 8 < 10));
 		System.out.println("resultado usando or: "+ (10 < 3 || 8 == 10));
-		System.out.println("resultado usando or: "+ (10 > 3 || 8 > 10));
+		System.out.println("resultado usando or: "+ (8 > 10 || 10 > 3));
 
 	}
 
