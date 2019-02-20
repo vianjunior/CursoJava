@@ -8,7 +8,8 @@ public class ComandoDoWhile {
 			i++;
 		} while (i < 10);
 		
-		// o do-while garante que a expressão seja executada pelo menos uma vez, mesmo sendo falsa.
+		// o do-while garante que a instrução seja executada pelo menos uma vez, mesmo sendo falsa.
+		// primeiro executa, depois valida.
 		int j = 5;
 		do {
 			System.out.println(j + " é maior que 10");
