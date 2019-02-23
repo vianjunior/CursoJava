@@ -19,7 +19,7 @@ public class CalculoFrete {
 			codigo = entrada.nextInt();
 
 			if (codigo != 0) {
-				if (codigo == 1 || codigo == 2 || codigo == 3 || codigo == 4 || codigo == 5 || codigo == 6) {
+				if (codigo >= 1 && codigo <= 6) {
 					System.out.println("Informe a quantidade vendida: ");
 					quantidade = entrada.nextInt();
 
