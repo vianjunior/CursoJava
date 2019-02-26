@@ -5,40 +5,40 @@ public class Pessoa {
 	String nome;
 	int idade;
 	char sexo;
-	boolean estadoCivil;
+	String estadoCivil;
 	
 	
 	// este é um método void, pois nao retornará dados. Só executará uma açao
-	void guardarNome(String n) {
-		nome = n;
+	void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	// é necessário definir o tipo do retorno do método. Neste caso é String
-	String retornarNome() {
+	String getNome() {
 		return nome;
 	}
 	
-	void guardarIdade(int i) {
-		idade = i;
+	void setIdade(int idade) {
+		this.idade = idade;
 	}
 	
-	int retornarIdade() {
+	int getIdade() {
 		return idade;
 	}
 	
-	void guardarSexo(char s) {
-		sexo = s;
+	void setSexo(char sexo) {
+		this.sexo = sexo;
 	}
 	
-	char retornarSexo() {
+	char getSexo() {
 		return sexo;
 	}
 	
-	void guardarEstadoCivil(boolean estC) {
-		estadoCivil = estC;
+	void setEstadoCivil(String estadoCivil) {
+		this.estadoCivil = estadoCivil;
 	}
 	
-	boolean retornarEstadoCivil() {
+	String getEstadoCivil() {
 		return estadoCivil;
 	}
 
