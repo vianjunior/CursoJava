@@ -41,5 +41,23 @@ public class Pessoa {
 	String getEstadoCivil() {
 		return estadoCivil;
 	}
+	
+	void setDados(String nome, int idade, char sexo, String estadoCivil) {
+		// poderia ser utilizado o this. mas desta maneira, estaria recriando o método.
+		// assim é possível reaproveitar os Setters já criados.
+		setNome(nome);
+		setIdade(idade);
+		setSexo(sexo);
+		setEstadoCivil(estadoCivil);
+	}
+	
+	void mostrarDados(){
+		System.out.println("Dados Inseridos");
+		System.out.println("----------------------------------");
+		System.out.println("Nome: " + getNome());
+		System.out.println("Idade: " + getIdade());
+		System.out.println("Sexo: " + getSexo());
+		System.out.println("Estado Civil: " + getEstadoCivil());
+	}
 
 }

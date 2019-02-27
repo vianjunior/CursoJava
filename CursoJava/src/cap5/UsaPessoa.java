@@ -26,25 +26,25 @@ public class UsaPessoa {
 		
 		// usando metodos para acessar os atributos da classe
 		
-		System.out.println("Informe seu nome:");
-		p.setNome(entrada.next());
-		System.out.println("Informe sua idade:");
-		p.setIdade(entrada.nextInt());
-		System.out.println("Informe seu sexo:");
-		p.setSexo(entrada.next().charAt(0));
-		System.out.println("Informe seu estado civil");
-		p.setEstadoCivil(entrada.next());
-		entrada.close();
+		/*
+		 * System.out.println("Informe seu nome:"); p.setNome(entrada.next());
+		 * System.out.println("Informe sua idade:"); p.setIdade(entrada.nextInt());
+		 * System.out.println("Informe seu sexo:"); p.setSexo(entrada.next().charAt(0));
+		 * System.out.println("Informe seu estado civil");
+		 * p.setEstadoCivil(entrada.next()); entrada.close();
+		 * 
+		 * System.out.println("**********************************");
+		 */
 		
-		System.out.println("**********************************");
+		/*
+		 * System.out.println("Nome: " + p.getNome()); System.out.println("Idade: " +
+		 * p.getIdade()); System.out.println("Sexo: " + p.getSexo());
+		 * System.out.println("Estado Civil: " + p.getEstadoCivil());
+		 */
 		
-		System.out.println("Dados Inseridos");
-		System.out.println("----------------------------------");
+		p.setDados("Bruna", 24, 'F', "Solteira");
 		
-		System.out.println("Nome: " + p.getNome());
-		System.out.println("Idade: " + p.getIdade());
-		System.out.println("Sexo: " + p.getSexo());
-		System.out.println("Estado Civil: " + p.getEstadoCivil());
+		p.mostrarDados();
 		
 		entrada.close();
 		
