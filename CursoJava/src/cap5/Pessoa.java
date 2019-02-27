@@ -1,47 +1,52 @@
 package cap5;
 
 public class Pessoa {
-	
-	String nome;
-	int idade;
-	char sexo;
-	String estadoCivil;
-	
-	
+
+	/*
+	 * String nome; int idade; char sexo; String estadoCivil;
+	 */
+	// é importante que os atributos sejam encapsulados (privados), para ser
+	// possível acessá-los somente por get e set;
+
+	private String nome;
+	private int idade;
+	private char sexo;
+	private String estadoCivil;
+
 	// este é um método void, pois nao retornará dados. Só executará uma açao
 	void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
 	// é necessário definir o tipo do retorno do método. Neste caso é String
 	String getNome() {
 		return nome;
 	}
-	
+
 	void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
+
 	int getIdade() {
 		return idade;
 	}
-	
+
 	void setSexo(char sexo) {
 		this.sexo = sexo;
 	}
-	
+
 	char getSexo() {
 		return sexo;
 	}
-	
+
 	void setEstadoCivil(String estadoCivil) {
 		this.estadoCivil = estadoCivil;
 	}
-	
+
 	String getEstadoCivil() {
 		return estadoCivil;
 	}
-	
+
 	void setDados(String nome, int idade, char sexo, String estadoCivil) {
 		// poderia ser utilizado o this. mas desta maneira, estaria recriando o método.
 		// assim é possível reaproveitar os Setters já criados.
@@ -50,8 +55,8 @@ public class Pessoa {
 		setSexo(sexo);
 		setEstadoCivil(estadoCivil);
 	}
-	
-	void mostrarDados(){
+
+	void mostrarDados() {
 		System.out.println("Dados Inseridos");
 		System.out.println("----------------------------------");
 		System.out.println("Nome: " + getNome());
