@@ -10,13 +10,13 @@ public class TestaGato {
 		g.setNome("Félix");
 		g.setRaca("Siamês");
 		g.setIdade(5);
-		g.setAlimentacao();
+		g.setAlimentacao(g.getIdade());
 		g.setVacina(true);
 		
 		g2.setNome("Patinhas");
 		g2.setRaca("Angorá");
 		g2.setIdade(1);
-		g2.setAlimentacao();
+		g2.setAlimentacao(g2.getIdade());
 		g2.setVacina(false);
 		
 		g.exibirDados();

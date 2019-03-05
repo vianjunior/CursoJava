@@ -32,10 +32,10 @@ public class Gato {
 		return idade;
 	}
 	
-	void setAlimentacao() {
-		if (getIdade() <= 1) {
+	void setAlimentacao(int idade) {
+		if (idade <= 2) {
 			this.alimentacao = "8 vezes ao dia";
-		}else if(getIdade() < 8) {
+		}else if(idade < 8) {
 			this.alimentacao = "6 vezes ao dia";
 		}else {
 			this.alimentacao = "3 vezes ao dia";
