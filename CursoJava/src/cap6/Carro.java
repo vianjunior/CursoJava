@@ -18,6 +18,24 @@ public class Carro {
 		setCor(cor);
 		setNrPortas(nPortas);
 	}
+	
+	// Construtores podem ser sobrecarregados
+	Carro(String fabricante, int ano, int nrPortas){
+		setFabricante(fabricante);
+		setAno(ano);
+		setNrPortas(nrPortas);
+	}
+	
+	Carro(String fabricante, String modelo, int ano){
+		setFabricante(fabricante);
+		setModelo(modelo);
+		setAno(ano);
+	}
+	
+	Carro(String fabricante, int ano){
+		setFabricante(fabricante);
+		setAno(ano);
+	}
 
 	public String getFabricante() {
 		return fabricante;
