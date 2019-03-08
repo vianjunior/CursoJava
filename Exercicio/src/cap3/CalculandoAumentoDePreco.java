@@ -17,6 +17,8 @@ public class CalculandoAumentoDePreco {
 		double valorFinal = valor + ((valor * porcentagem) / 100);
 		
 		System.out.println("Valor Final: " + valorFinal);
+		
+		entrada.close();
 
 	}
 
